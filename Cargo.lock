@@ -5383,48 +5383,6 @@ checksum = "1ebf944e87a7c253233ad6766e082e3cd714b5d03812acc24c318f549614536e"
 [[package]]
 name = "workspace-hack"
 version = "0.1.0"
-dependencies = [
- "ahash",
- "anstream",
- "approx",
- "arrayvec",
- "bitflags 2.13.2",
- "bytemuck",
- "clap",
- "clap_builder",
- "either",
- "fastrand",
- "futures-core",
- "half",
- "hashbrown 0.17.1",
- "image",
- "indexmap",
- "libc",
- "log",
- "memchr",
- "num-traits",
- "objc2-core-graphics",
- "objc2-foundation 0.3.2",
- "once_cell",
- "ordered-float",
- "phf_shared",
- "proc-macro2",
- "quote",
- "raw-window-handle",
- "regex",
- "regex-automata",
- "serde",
- "serde_core",
- "smallvec 1.16.2",
- "syn 2.0.119",
- "syn 3.0.6",
- "thiserror 2.0.21",
- "wgpu",
- "wgpu-core",
- "wgpu-hal",
- "wgpu-types",
- "zerocopy",
-]
 
 [[package]]
 name = "writeable"
