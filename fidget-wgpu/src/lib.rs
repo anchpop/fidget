@@ -110,7 +110,12 @@ pub(crate) mod shaders {
 }
 
 /// Number of [`TapeWord`] words in the tape data flexible array
-pub(crate) const TAPE_DATA_CAPACITY: usize = 8 * 1024 * 1024; // 8M words, 64 MiB
+///
+/// Tiles whose simplified tapes no longer fit fall back to their parent's
+/// tape, so a long tape over a lot of surface slows down sharply once this
+/// fills. As much as fits in a baseline 128 MiB storage buffer, leaving
+/// 8 MiB for the config header.
+pub(crate) const TAPE_DATA_CAPACITY: usize = 15 * 1024 * 1024; // 15M words, 120 MiB
 
 #[repr(C)]
 pub(crate) struct TapeWord {
